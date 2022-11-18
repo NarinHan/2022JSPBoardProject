@@ -4,12 +4,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
+    <title>Add Form</title>
 </head>
 <body>
 
 <h1>Add New Post</h1>
-<form action="addpost.jsp" method="post">
+<form action="addpost.jsp" method="post" enctype="multipart/form-data">
     <table>
         <tr>
             <td>Category:</td>
@@ -26,6 +26,10 @@
         <tr>
             <td>Content:</td>
             <td><textarea cols="50" rows="5" name="content"></textarea></td>
+        </tr>
+        <tr>
+            <td>Photo:</td>
+            <td><input type="file" name="photo" /></td>
         </tr>
         <tr>
             <td><a href="posts.jsp">View All Records</a></td>

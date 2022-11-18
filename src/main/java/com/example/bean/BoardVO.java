@@ -8,6 +8,7 @@ public class BoardVO {
 	private String title;
 	private String writer;
 	private String content;
+	private String photo;
 	private Date regdate;
 	private Date editdate;
 	private int cnt;
@@ -50,6 +51,14 @@ public class BoardVO {
 
 	public void setContent(String content) {
 		this.content = content;
+	}
+
+	public String getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(String photo) {
+		this.photo = photo;
 	}
 
 	public Date getRegdate() {
